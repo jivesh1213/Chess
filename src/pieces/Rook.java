@@ -15,9 +15,13 @@ public class Rook extends Piece{
     private final static int[] CANDIDATE_MOVE_COORDINATES = {-8, -1, 1, 8};
     
     public Rook(final int piecePosition, final Alliance pieceAlliance) {
-        super(piecePosition, pieceAlliance, PieceType.ROOK);
+        super(piecePosition, pieceAlliance, PieceType.ROOK, true);
     }
 
+    public Rook(final int piecePosition, final Alliance pieceAlliance, final boolean isFirstMove){
+        super(piecePosition, pieceAlliance, PieceType.ROOK, isFirstMove);
+    }
+    
     @Override
     public Collection<Move> calculateLegalMoves(Board board) {
         
@@ -45,7 +49,7 @@ public class Rook extends Piece{
                         final Alliance pieceAlliance = pieceAtDestination.getPieceAlliance();
 
                         if(this.pieceAlliance != pieceAlliance)
-                            legalMoves.add(new Move.AttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
+                            legalMoves.add(new Move.MajorAttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
                         break;
                     }
                 }

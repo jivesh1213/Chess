@@ -15,9 +15,13 @@ public class Bishop extends Piece{
     private final static int[] CANDIDATE_MOVE_COORDINATES = {-9, -7, 7, 9};
     
     public Bishop(final int piecePosition, final Alliance pieceAlliance) {
-        super(piecePosition, pieceAlliance, PieceType.BISHOP);
+        super(piecePosition, pieceAlliance, PieceType.BISHOP, true);
     }
 
+    public Bishop(final int piecePosition, final Alliance pieceAlliance, final boolean isFirstMove){
+        super(piecePosition, pieceAlliance, PieceType.BISHOP, isFirstMove);
+    }
+    
     @Override
     public Collection<Move> calculateLegalMoves(Board board) {
         final List<Move> legalMoves = new ArrayList<>();
@@ -44,7 +48,7 @@ public class Bishop extends Piece{
                         final Alliance pieceAlliance = pieceAtDestination.getPieceAlliance();
 
                         if(this.pieceAlliance != pieceAlliance)
-                            legalMoves.add(new Move.AttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
+                            legalMoves.add(new Move.MajorAttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
                         break;
                     }
                 }

@@ -3,18 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Netbeans%20project/Chess/src/board/Move.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/player/WhitePlayer.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/pieces/Pawn.java</file>
-            <file>file:/E:/Netbeans%20project/Chess/src/pieces/Piece.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/GUI/GameHistoryPanel.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/GUI/TakenPiecesPanel.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/Enum/Alliance.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/pieces/Knight.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/player/Player.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/board/Tile.java</file>
-            <file>file:/E:/Netbeans%20project/Chess/src/pieces/King.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/board/Board.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/pieces/Bishop.java</file>
-            <file>file:/E:/Netbeans%20project/Chess/src/pieces/Rook.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/board/BoardUtils.java</file>
             <file>file:/E:/Netbeans%20project/Chess/src/pieces/Queen.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/GUI/Table.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/board/Move.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/player/MoveStatus.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/pieces/Piece.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/player/BlackPlayer.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/pieces/King.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/pieces/Rook.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/player/MoveTransition.java</file>
+            <file>file:/E:/Netbeans%20project/Chess/src/Chess.java</file>
         </group>
     </open-files>
 </project-private>

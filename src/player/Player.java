@@ -33,7 +33,7 @@ public abstract class Player {
                 attackMoves.add(move);
             }
         }
-        return Collections.unmodifiableCollection(moves);
+        return Collections.unmodifiableCollection(attackMoves);
     }
     
     private King establishKing() {
@@ -104,7 +104,3 @@ public abstract class Player {
     protected abstract Collection<Move> calculateKingCastles(Collection<Move> playerLegals, Collection<Move> opponentsLegals);
 
 }
-
-
-
-
