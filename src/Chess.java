@@ -9,6 +9,6 @@ public class Chess {
         Board board = Board.createStandardBoard();
         System.out.println(board);
         
-        Table table = new Table();
+        Table.get().show();
     }
 }
